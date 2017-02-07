@@ -1,0 +1,207 @@
+/* AGENT_SHEET */
+scrollbarbutton {
+    display: none !important;
+}
+
+scrollbar {
+    -moz-appearance: none !important;
+    background: none !important;
+    background-color: transparent !important;
+    position: relative !important;
+}
+
+scrollbar[orient="vertical"] {
+    margin-left: -10px !important;
+    width: 10px !important;
+}
+
+scrollbar[orient="horizontal"] {
+    margin-top: -10px !important;
+    height: 10px !important;
+}
+
+scrollbar thumb {
+    -moz-appearance: none !important;
+    background: none !important;
+    background-color: rgba(0, 40, 50, 0.3) !important;
+    border: 0px !important;
+}
+
+scrollbar thumb:hover,
+scrollbar thumb:active {
+    background-color: rgba(0, 40, 50, 0.4) !important;
+}
+
+/*字体*/
+/*字体 搜索栏*/
+#searchbar .textbox-input-box,
+#show_location_status,
+.textbox-input-box.urlbar-input-box {
+    font-size: 12px;
+    font-family: Roboto !important;
+}
+/*字体 书签栏*/
+#personal-bookmarks .bookmark-item {
+    font-family: Roboto !important;
+}
+/*字体 默认内容*/
+/*
+body {
+    font-family: sans-serif !important;
+}
+*/
+@font-face {
+    font-family:"SimSun";
+    src: local("XHei")
+}
+
+@font-face {
+    font-family:"宋体";
+    src: local("XHei")
+}
+
+
+@font-face {
+    font-family:"NSimSun";
+    src: local("XHei")
+}
+
+@font-face {
+    font-family:"新宋体";
+    src: local("XHei")
+}
+
+@font-face {
+    font-family:"Microsoft YaHei";
+    src: local("XHei")
+}
+
+@font-face {
+    font-family:"微软雅黑";
+    src: local("XHei")
+}
+
+@font-face {
+    font-family: "Microsoft YaHei UI";
+    src: local("XHei")
+}
+
+/*字体 选定文本*/
+*::-moz-selection {
+    background: #770055 !important;
+    color: #FFFFFF !important;
+}
+
+/*标签栏*/
+/*隐藏原梯形标签*/
+#TabsToolbar {
+    background: transparent !important;
+    margin-bottom: 0 !important;
+}
+
+#TabsToolbar .tab-background {
+    margin: 0 !important;
+    background: transparent !important;
+}
+
+/*标签前后的弧形*/
+#TabsToolbar .tab-background-start,
+#TabsToolbar .tab-background-end {
+    display: none !important;
+}
+
+/*标签中间的背景*/
+#TabsToolbar .tab-background-middle {
+    margin: -4px -2px !important;
+    background: transparent !important;
+}
+
+/*标签前后的竖线*/
+#TabsToolbar .tabbrowser-tab:after,
+#TabsToolbar .tabbrowser-tab:before {
+    display: none !important;
+}
+
+/*标签置左*/
+#TabsToolbar .arrowscrollbox-scrollbox {
+    padding: 0px !important;
+}
+
+/*重绘新建标签按钮和每个标签*/
+#TabsToolbar .tabs-newtab-button,
+#TabsToolbar .tabbrowser-tab {
+    -moz-border-image: none !important;
+    border: none !important;
+    border-style: solid !important;
+    border-color: rgba(0,0,0,.2) !important;
+    border-width: 1px 0 0 1px !important;
+    text-shadow: 0 0 4px rgba(255, 255, 255, .75) !important;
+    padding: 4px 2px !important;
+    background: rgba(255, 255, 255, .27) !important;
+    background-clip: padding-box !important;
+}
+
+/*标签边框*/
+#TabsToolbar .tabbrowser-tab[first-tab][last-tab],
+#TabsToolbar .tabbrowser-tab[last-visible-tab] {
+    border-right-width: 1px !important;
+}
+
+/*未选中标签*/
+#TabsToolbar .tabbrowser-tab[afterselected] {
+    border-left-color: rgba(0,0,0,.25) !important;
+}
+
+/*选中标签*/
+#TabsToolbar .tabbrowser-tab[selected] {
+    background: #F5F5F5 !important;
+    background-clip: padding-box !important;
+    border-color: rgba(0,0,0,.25) !important;
+}
+
+/* 标签和新建标签按钮得到焦点 */
+#TabsToolbar .tabs-newtab-button:hover,
+#TabsToolbar .tabbrowser-tab:hover:not([selected]) {
+    background-color: rgba(255, 255, 255, .55) !important;
+}
+/* 新建标签按钮调整 */
+#TabsToolbar .tabs-newtab-button {
+    border-width: 1px 1px 0 0 !important;
+    margin: 0 !important;
+    width: auto !important;
+    padding: 0 5px  !important;
+}
+
+/*标签和标签栏高度*/
+.tab-background-start[selected=true]::after,
+.tab-background-start[selected=true]::before,
+.tab-background-start,
+.tab-background-end,
+.tab-background-end[selected=true]::after,
+.tab-background-end[selected=true]::before {
+    min-height: 24px !important;
+}
+
+#TabsToolbar .tabbrowser-tabs {
+    min-height: 24px !important;
+}
+
+/*除去标签栏背景模糊效果*/
+#TabsToolba::after {
+    display: none !important;
+}
+
+/*隐藏火狐标签页上方的1px间距*/
+#tabbrowser-tabs {
+    margin-top: -1px !important;
+}
+
+/*强制显示地址栏阅读模式图标*/
+#reader-mode-button {
+    display: block !important;
+    visibility: visible !important;
+}
+
+notification[value="plugin-hidden"] {
+  display: none !important;
+}
