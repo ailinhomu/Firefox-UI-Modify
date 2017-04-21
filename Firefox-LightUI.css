@@ -1,0 +1,104 @@
+/* AGENT_SHEET */
+scrollbarbutton {
+    display: none !important;
+}
+
+scrollbar {
+    -moz-appearance: none !important;
+    background: none !important;
+    background-color: transparent !important;
+    position: relative !important;
+}
+
+scrollbar[orient="vertical"] {
+    margin-left: -10px !important;
+    width: 10px !important;
+}
+
+scrollbar[orient="horizontal"] {
+    margin-top: -10px !important;
+    height: 10px !important;
+}
+
+scrollbar thumb {
+    -moz-appearance: none !important;
+    background: none !important;
+    background-color: rgba(0, 40, 50, 0.3) !important;
+    border: 0px !important;
+}
+
+scrollbar thumb:hover,
+scrollbar thumb:active {
+    background-color: rgba(0, 40, 50, 0.4) !important;
+}
+
+/*字体*/
+/*字体 搜索栏*/
+#searchbar .textbox-input-box,
+#show_location_status,
+.textbox-input-box.urlbar-input-box {
+    font-size: 12px;
+    font-family: Roboto !important;
+}
+/*字体 书签栏*/
+#personal-bookmarks .bookmark-item {
+    font-family: Roboto !important;
+}
+/*字体 默认内容*/
+/*
+body {
+    font-family: sans-serif !important;
+}
+*/
+@font-face {
+    font-family:"SimSun";
+    src: local("XHei")
+}
+
+@font-face {
+    font-family:"宋体";
+    src: local("XHei")
+}
+
+
+@font-face {
+    font-family:"NSimSun";
+    src: local("XHei")
+}
+
+@font-face {
+    font-family:"新宋体";
+    src: local("XHei")
+}
+
+@font-face {
+    font-family:"Microsoft YaHei";
+    src: local("XHei")
+}
+
+@font-face {
+    font-family:"微软雅黑";
+    src: local("XHei")
+}
+
+@font-face {
+    font-family: "Microsoft YaHei UI";
+    src: local("XHei")
+}
+
+/*字体 选定文本*/
+*::-moz-selection {
+    background: #770055 !important;
+    color: #FFFFFF !important;
+}
+
+/*强制显示地址栏阅读模式图标*/
+#reader-mode-button {
+    display: block !important;
+    visibility: visible !important;
+}
+
+/*隐藏Flash启用提示*/
+notification[value="plugin-hidden"] {
+  display: none !important;
+}
