@@ -52,38 +52,38 @@ body {
 */
 @font-face {
     font-family:"SimSun";
-    src: local("XHei")
+    src: local("SIMHEI")
 }
 
 @font-face {
     font-family:"宋体";
-    src: local("XHei")
+    src: local("SIMHEI")
 }
 
 
 @font-face {
     font-family:"NSimSun";
-    src: local("XHei")
+    src: local("SIMHEI")
 }
 
 @font-face {
     font-family:"新宋体";
-    src: local("XHei")
+    src: local("SIMHEI")
 }
 
 @font-face {
     font-family:"Microsoft YaHei";
-    src: local("XHei")
+    src: local("SIMHEI")
 }
 
 @font-face {
     font-family:"微软雅黑";
-    src: local("XHei")
+    src: local("SIMHEI")
 }
 
 @font-face {
     font-family: "Microsoft YaHei UI";
-    src: local("XHei")
+    src: local("SIMHEI")
 }
 
 /*字体 选定文本*/
