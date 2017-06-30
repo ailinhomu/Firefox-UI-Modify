@@ -1,0 +1,70 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix("about:reader") {
+    /*亮色主题*/
+    body.light, button.light-button {
+        color: #333333 !important;
+        background-color: #F3F2EE !important;
+    }
+    /*暗色主题*/
+    body.dark, button.dark-button {
+        color: #CECECE !important;
+        background-color: #333333 !important;
+    }
+    /*深褐色主题*/
+    body.sepia, button.sepia-button {
+        color: #332211 !important;
+        background-color: #F4ECD8 !important;
+    }
+    /*衬线字体*/
+    body.serif {
+        font-family: "方正书宋_GBK" !important;
+    }
+    /*非衬线字体*/
+    body.sans-serif {
+        font-family: "文泉驿正黑" !important;
+    }
+    /*连接颜色*/
+    a, a:visited, a:hover ,a:active {
+        color: #770055 !important;/**/
+    }
+    /*引用栏*/
+    body.light blockquote {
+        -moz-border-start: 3px solid #BABABA !important;
+    }
+    /*页面设置*/
+    body {
+        padding: 20px 40px;
+    }
+    /*去除无关元素*/
+    #reader-toolbar, #reader-toolbar li > button {
+        border-color: transparent !important;
+    }
+    #reader-toolbar, #reader-toolbar li > button:not(:hover) {
+        background-color: transparent !important;
+    }
+    #reader-popup, #dropdown-popup {
+        border: none !important;
+    }
+    [class="button close-button"],
+    [class="dropdown-toggle button style-button"] {
+        border: none !important;
+    }
+    #reader-domain, #pocket-button {
+        border: none !important;
+    }
+    #font-type-buttons > button,
+    #font-size-buttons > button,
+    #content-width-buttons > button,
+    #line-height-buttons > button,
+    #color-scheme-buttons > button,
+    #narrate-control > button,
+    #narrate-rate > input,
+    #narrate-voices > button,
+    #voice-options > button {
+        border: none !important;
+    }
+
+
+    
+}
