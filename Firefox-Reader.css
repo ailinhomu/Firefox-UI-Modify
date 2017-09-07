@@ -18,11 +18,11 @@
     }
     /*衬线字体*/
     body.serif {
-        font-family: "方正书宋_GBK" !important;
+        font-family: "Noto Serif CJK SC" !important;
     }
     /*非衬线字体*/
     body.sans-serif {
-        font-family: "文泉驿正黑" !important;
+        font-family: "Noto Sans CJK SC" !important;
     }
     /*连接颜色*/
     a, a:visited, a:hover ,a:active {
@@ -35,6 +35,11 @@
     /*页面设置*/
     body {
         padding: 20px 40px;
+    }
+    /*图片居中大小调整*/
+    img {
+        margin: 0 auto;
+        width: 90%;
     }
     /*去除无关元素*/
     #reader-toolbar, #reader-toolbar li > button {
@@ -64,7 +69,4 @@
     #voice-options > button {
         border: none !important;
     }
-
-
-    
 }
