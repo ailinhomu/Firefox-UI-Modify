@@ -1,0 +1,117 @@
+/*字体*/
+@font-face {
+    font-family:"SimSun";
+    src: local("XHei")
+}
+@font-face {
+    font-family:"宋体";
+    src: local("XHei")
+}
+@font-face {
+    font-family:"NSimSun";
+    src: local("XHei")
+}
+@font-face {
+    font-family:"新宋体";
+    src: local("XHei")
+}
+@font-face {
+    font-family:"Microsoft YaHei";
+    src: local("XHei")
+}
+@font-face {
+    font-family:"微软雅黑";
+    src: local("XHei")
+}
+@font-face {
+    font-family: "Microsoft YaHei UI";
+    src: local("XHei")
+}
+/*选中字体颜色*/
+*::-moz-selection {
+    background: #880066 !important;
+    color: #FFFFFF !important;
+}
+/*阅读模式*/
+@-moz-document url-prefix("about:reader") {
+    /*亮色主题*/
+    body.light, button.light-button {
+        color: #333333 !important;
+        background-color: #F3F2EE !important;
+    }
+    /*暗色主题*/
+    body.dark, button.dark-button {
+        color: #CECECE !important;
+        background-color: #333333 !important;
+    }
+    /*深褐色主题*/
+    body.sepia, button.sepia-button {
+        color: #332211 !important;
+        background-color: #F4ECD8 !important;
+    }
+    /*衬线字体*/
+    body.serif {
+        font-family: "方正准雅宋_GBK" !important;
+    }
+    /*非衬线字体*/
+    body.sans-serif {
+        font-family: "XHei" !important;
+    }
+    /*连接样式*/
+    a, a:visited, a:hover ,a:active {
+        color: inherit !important;
+        font-family: sans-serif !important;
+        font-size: smaller !important;
+        font-weight: bolder !important;
+    }
+    /*引用栏*/
+    body.light blockquote {
+        border-inline-start: 3px solid #333333 !important;
+    }
+    body.sepia blockquote {
+        border-inline-start: 3px solid #332211 !important;
+    }
+    body.dark blockquote {
+        border-inline-start: 3px solid #CECECE !important;
+    }
+    /*页面设置*/
+    body {
+        padding: 20px 40px;
+    }
+    /*图片居中大小调整*/
+    img {
+        margin: 0 auto;
+        width: 90%;
+    }
+    /*去除无关元素*/
+    #reader-toolbar, #reader-toolbar li > button {
+        border-color: transparent !important;
+    }
+    #reader-toolbar, #reader-toolbar li > button:not(:hover) {
+        background-color: transparent !important;
+    }
+    #reader-popup, #dropdown-popup {
+        border: none !important;
+    }
+    [class="button close-button"],
+    [class="dropdown-toggle button style-button"] {
+        border: none !important;
+    }
+    #reader-domain {
+        border: none !important;
+    }
+    #font-type-buttons > button,
+    #font-size-buttons > button,
+    #content-width-buttons > button,
+    #line-height-buttons > button,
+    #color-scheme-buttons > button,
+    #narrate-control > button,
+    #narrate-rate > input,
+    #narrate-voices > button,
+    #voice-options > button {
+        border: none !important;
+    }
+    #pocket-button {
+        display: none !important;
+    }
+}

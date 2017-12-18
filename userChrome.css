@@ -1,0 +1,32 @@
+/*一直显示alltabs-button*/
+#alltabs-button {
+	visibility: visible !important;
+}
+/*查找栏置顶*/
+.browserContainer > findbar, 
+.findbar-closebutton.close-icon {
+	-moz-box-ordinal-group: 0 !important;
+}
+.browserContainer > findbar {
+	margin-top: -1px !important;
+	padding-top: 1px !important;
+	box-shadow: none !important;
+	border-bottom: 1px solid #C1C1C1 !important;
+}
+/*总是显示阅读视图按钮*/
+#reader-mode-button {
+  display:  block !important;
+  visibility:visible !important;
+}
+/*字体*/
+tab {
+    font-family: Roboto !important;
+}
+#PlacesToolbarItems {
+    font-family: Roboto !important;
+}
+.textbox-input-box.urlbar-input-box,
+#searchbar .textbox-input-box {
+    font-size:13px !important;
+    font-family: Roboto!important;
+}
